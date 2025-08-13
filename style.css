@@ -1,0 +1,17 @@
+/* Floating Balloons */
+.balloon { position: absolute; width: 50px; animation: float 6s ease-in-out infinite; }
+@keyframes float { 0%{transform:translateY(0) rotate(0deg);} 50%{transform:translateY(-50px) rotate(15deg);} 100%{transform:translateY(0) rotate(-15deg);} }
+
+/* Carousel */
+.carousel { overflow: hidden; position: relative; }
+.carousel-track { display: flex; transition: transform 0.5s ease-in-out; }
+.carousel-slide { min-width: 100%; flex-shrink: 0; }
+
+/* Floating Book Now Button Pulse */
+#book-now { animation: pulse 2s infinite; }
+@keyframes pulse { 0%,100%{transform:scale(1);} 50%{transform:scale(1.1);} }
+
+/* Custom Gold Colors */
+.bg-gold { background-color: #FFD700; }
+.text-gold { color: #FFD700; }
+.hover-gold-dark:hover { background-color: #E6C200; }

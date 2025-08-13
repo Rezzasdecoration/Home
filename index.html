@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rezza's Decorations & Events</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- AOS animations -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black text-gold font-sans relative overflow-x-hidden">
+
+  <!-- Hero -->
+  <section class="relative h-screen w-full">
+    <video autoplay muted loop class="absolute w-full h-full object-cover">
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    </video>
+    <div class="absolute inset-0 bg-black/60 flex flex-col justify-center items-center text-center px-6" data-aos="fade-down">
+      <h1 class="text-5xl font-bold text-gold mb-4">Rezza's Decorations & Events</h1>
+      <p class="text-xl text-gold mb-6">Turning ordinary parties into unforgettable memories</p>
+      <a href="#contact" class="bg-gold text-black px-6 py-3 rounded shadow hover-gold-dark transition">Book Your Event</a>
+    </div>
+    <img src="https://via.placeholder.com/50x50/FFD700/000000?text=B1" class="balloon left-10 top-3 animate-float">
+    <img src="https://via.placeholder.com/50x50/FFD700/000000?text=B2" class="balloon left-1/2 top-20 animate-float">
+    <img src="https://via.placeholder.com/50x50/FFD700/000000?text=B3" class="balloon right-10 top-10 animate-float">
+  </section>
+
+  <!-- About -->
+  <section class="py-16 container mx-auto px-6 md:flex md:items-center md:gap-12">
+    <div class="md:w-1/2 mb-8 md:mb-0" data-aos="fade-right">
+      <img src="https://via.placeholder.com/600x400/000000/FFD700?text=About+Us" alt="Event Decoration" class="rounded-lg shadow-lg">
+    </div>
+    <div class="md:w-1/2" data-aos="fade-left">
+      <h2 class="text-3xl font-bold mb-4 text-gold">About Us</h2>
+      <p class="mb-4">Rezza's Decorations specializes in creating vibrant party environments with themed setups, balloons, and event styling that captivate guests and make memories last.</p>
+      <p>Every project is tailored with creativity, professionalism, and attention to detail, ensuring your celebrations stand out.</p>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="bg-black/90 py-16 text-center">
+    <h2 class="text-3xl font-bold mb-12 text-gold" data-aos="fade-up">Our Services</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="bg-black/80 p-6 rounded shadow hover:shadow-lg transition" data-aos="zoom-in">
+        <h3 class="text-xl font-semibold mb-2 text-gold">Balloon Arrangements</h3>
+        <p>Custom arches, centerpieces, and creative balloon designs for all occasions.</p>
+      </div>
+      <div class="bg-black/80 p-6 rounded shadow hover:shadow-lg transition" data-aos="zoom-in" data-aos-delay="150">
+        <h3 class="text-xl font-semibold mb-2 text-gold">Themed Party Setups</h3>
+        <p>Personalized themes for birthdays, anniversaries, and corporate events.</p>
+      </div>
+      <div class="bg-black/80 p-6 rounded shadow hover:shadow-lg transition" data-aos="zoom-in" data-aos-delay="300">
+        <h3 class="text-xl font-semibold mb-2 text-gold">Event Styling & Decor</h3>
+        <p>Professional decoration services that leave a lasting impression.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Carousel -->
+  <section class="py-16 container mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-12 text-gold" data-aos="fade-up">Our Work</h2>
+    <div class="carousel max-w-4xl mx-auto" data-aos="fade-up">
+      <div class="carousel-track">
+        <div class="carousel-slide"><img src="https://via.placeholder.com/600x400/000000/FFD700?text=Event1" class="rounded shadow-lg w-full" alt="Event 1"></div>
+        <div class="carousel-slide"><img src="https://via.placeholder.com/600x400/000000/FFD700?text=Event2" class="rounded shadow-lg w-full" alt="Event 2"></div>
+        <div class="carousel-slide"><img src="https://via.placeholder.com/600x400/000000/FFD700?text=Event3" class="rounded shadow-lg w-full" alt="Event 3"></div>
+      </div>
+    </div>
+    <div class="mt-6 flex justify-center gap-4">
+      <button id="prev" class="bg-gold text-black px-4 py-2 rounded hover-gold-dark">Prev</button>
+      <button id="next" class="bg-gold text-black px-4 py-2 rounded hover-gold-dark">Next</button>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-8 text-gold" data-aos="fade-up">Contact Us</h2>
+      <p class="mb-6" data-aos="fade-up" data-aos-delay="100">Fill out the form or reach us directly at <strong>09481762019</strong></p>
+      <form action="https://formsubmit.co/creativesuite.christian@gmail.com" method="POST" class="max-w-xl mx-auto space-y-4 text-left" data-aos="fade-up" data-aos-delay="200">
+        <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 rounded border border-gold focus:outline-none focus:ring-2 focus:ring-gold">
+        <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 rounded border border-gold focus:outline-none focus:ring-2 focus:ring-gold">
+        <textarea name="message" rows="5" placeholder="Your Message" required class="w-full p-3 rounded border border-gold focus:outline-none focus:ring-2 focus:ring-gold"></textarea>
+        <button type="submit" class="bg-gold text-black font-semibold px-6 py-3 rounded shadow hover-gold-dark transition w-full">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-gold py-6 text-center">&copy; 2025 Rezza's Decorations & Events. All Rights Reserved.</footer>
+
+  <!-- Floating Book Now -->
+  <a href="#contact" id="book-now" class="fixed bottom-6 right-6 bg-gold text-black font-bold px-5 py-3 rounded-full shadow-lg hover-gold-dark transition z-50 flex items-center space-x-2">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+    </svg>
+    <span>Book Now</span>
+  </a>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
